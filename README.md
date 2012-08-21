@@ -1,0 +1,3 @@
+# This is a prototype app for a Rails based Vendor Management System
+
+More updates to follow soon...
