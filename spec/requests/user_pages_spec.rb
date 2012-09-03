@@ -28,6 +28,7 @@ describe "User pages" do
 
         it { should have_selector('title', text: 'Sign up') }
         it { should have_content('error') }
+        it { should have_selector('div.alert.alert-error') }
       end
     end
 
@@ -45,6 +46,7 @@ describe "User pages" do
 
         it { should have_selector('title', text: user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
+        it { should have_link('Sign out') }
       end
 
       it "should create a user" do
